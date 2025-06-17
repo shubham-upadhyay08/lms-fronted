@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes - LMS</title>
+  <link rel="stylesheet" href="css/notes.css" />
+</head>
+<body>
+
+  <header>
+    <h1>📚 Study Notes</h1>
+    <p>Filter by subject & download your notes.</p>
+  </header>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button onclick="filterNotes('all')">All</button>
+    <button onclick="filterNotes('html')">HTML</button>
+    <button onclick="filterNotes('css')">CSS</button>
+    <button onclick="filterNotes('javascript')">JavaScript</button>
+  </div>
+
+  <!-- Notes List -->
+  <main class="notes-container" id="notesContainer">
+
+    <a href="notes/html.pdf" target="_blank" class="note-card html">
+      <h3>HTML Basics</h3>
+      <p>Introduction to HTML.</p>
+    </a>
+
+    <a href="notes/css.pdf" target="_blank" class="note-card css">
+      <h3>CSS Flexbox</h3>
+      <p>Learn Flexbox layout.</p>
+    </a>
+
+    <a href="notes/js.pdf" target="_blank" class="note-card javascript">
+      <h3>JavaScript DOM</h3>
+      <p>Manipulate HTML with JS.</p>
+    </a>
+
+  </main>
+
+  <!-- Admin Upload Panel -->
+  <section class="upload-section">
+    <h2>📤 Admin Upload Notes</h2>
+    <form id="uploadForm">
+      <input type="text" placeholder="Note Title" required />
+      <select required>
+        <option value="">Select Subject</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+      </select>
+      <input type="file" accept=".pdf" required />
+      <button type="submit">Upload</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Ashish Ranjan - LMS Project</p>
+  </footer>
+
+  <script src="js/notes.js"></script>
+</body>
+</html>

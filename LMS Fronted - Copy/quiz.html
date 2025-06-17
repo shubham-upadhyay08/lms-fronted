@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Quiz - LMS</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/quiz.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">📝 LMS Quiz</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        
+        
+      </ul>
+    </nav>
+  </header>
+
+  <section class="quiz-container">
+    <h2>HTML & CSS Quiz</h2>
+    <form id="quizForm">
+      <div class="question">
+        <p><strong>1. What does HTML stand for?</strong></p>
+        <label><input type="radio" name="q1" value="a" /> Hyper Text Markup Language</label><br>
+        <label><input type="radio" name="q1" value="b" /> Home Tool Markup Language</label><br>
+        <label><input type="radio" name="q1" value="c" /> Hyperlinks and Text Markup Language</label>
+      </div>
+
+      <div class="question">
+        <p><strong>2. What is the correct CSS syntax?</strong></p>
+        <label><input type="radio" name="q2" value="a" /> body:color=black;</label><br>
+        <label><input type="radio" name="q2" value="b" /> {body:color=black;}</label><br>
+        <label><input type="radio" name="q2" value="c" /> body { color: black; }</label>
+      </div>
+
+      <button type="submit" class="btn">Submit Quiz</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LMS Portal by Ashish Ranjan</p>
+  </footer>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>
